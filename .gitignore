@@ -1,1 +1,4 @@
 outputs/
+data/heic/
+.venv/
+__pycache__/
