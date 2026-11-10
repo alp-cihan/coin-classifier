@@ -40,9 +40,8 @@ def region_mask(shape, x, y, r, r_from, r_to):
 
 def region_mean(hsv, mask):
     """Mean H, S, V inside the mask."""
-    # TODO (you): compute the mean H, S and V of the pixels where mask is 255.
-    # Hint: cv2.mean(image, mask=...) returns a tuple of 4 values (the 4th is unused).
-    pass
+    h, s, v, _ = cv2.mean(hsv, mask=mask)
+    return h, s, v
 
 
 def load_groups():
